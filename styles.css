@@ -204,17 +204,21 @@ code {
   color: inherit;
 }
 
+:root {
+  --brand-color: #3f51b5;
+}
+
 .section {
   /* Other styles */
-  border: 1px solid #3f51b5;
+  border: 1px solid var(--brand-color);
 }
 
 .section-title {
   /* Other styles */
-  color: #3f51b5;
+  color: var(--brand-color);
 }
 
 .section-title::before {
   /* Other styles */
-  background-color: #3f51b5;
+  background-color: var(--brand-color);
 }
