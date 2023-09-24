@@ -86,7 +86,7 @@ tr:hover {
 .crosshair {
   cursor: crosshair;
 }
-.text {
+.text-text {
   cursor: text;
 }
 .vertical-text {
@@ -221,4 +221,113 @@ code {
 .section-title::before {
   /* Other styles */
   background-color: var(--brand-color);
+}
+
+.alert {
+  --alert-text-color: black;
+  --alert-accent-color: tomato;
+}
+
+.alert-text {
+  color: var(--alert-text-color);
+  border: 1px solid var(--alert-accent-color);
+}
+
+.alert-icon {
+  background-color: var(--alert-accent-color);
+}
+
+/* body {
+  font-family: sans-serif;
+  line-height: 1.5;
+} */
+
+.alert {
+  --alert-text-color: black;
+
+  color: var(--alert-text-color);
+}
+
+.alert.success {
+  --alert-text-color: green;
+}
+
+.alert.warning {
+  --alert-text-color: orange;
+}
+
+.alert.error {
+  --alert-text-color: red;
+}
+
+.text > span {
+  text-decoration: line-through;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.site-nav .link {
+  text-transform: uppercase;
+}
+
+.post-title {
+  text-align: center;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-justify {
+  text-align: justify;
+}
+
+/* text-indent: value | percent | inherit */
+.post-text {
+  text-indent: 100px;
+}
+
+/* line-height: multiplier | value | percent | normal | inherit*/
+.post-text {
+  font-size: 16px;
+  line-height: normal;
+}
+
+/* letter-spacing: value | normal | inherit */
+.post-title {
+  letter-spacing: 6px;
+}
+
+.post-text {
+  letter-spacing: 2px;
+  word-spacing: 10px;
+}
+
+/* text-shadow: <X offset>, <Y offset>, <blur radius>, <color> */
+.title {
+  font-size: 50px;
+  font-weight: 900px;
+  font-style: italic;
+  color: #131313;
+  /* text-shadow: 2px 2px 4px #000000; */
+  text-shadow: 2px 2px 20px #ff0000, 5px 5px 5px #000000;
+}
+
+pre {
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: #2a2a2a;
+  font-size: 16px;
+}
+
+pre::first-letter {
+  font-family: "Tahoma", serif;
+  font-size: 32px;
+  color: #f44336;
+}
+
+pre::selection {
+  color: #ffffff;
+  background-color: #091e91;
 }
